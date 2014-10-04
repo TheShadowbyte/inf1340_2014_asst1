@@ -77,3 +77,5 @@ def test_float_input():
         grade_to_gpa(82.5)
 
 # add functions for any other tests
+
+grade_to_gpa = {"A+": 4.0, "A": 4.0, "A-": 3.7, "B+": 3.3, "B": 3.0, "B-": 2.7, "FZ": 0.0}
