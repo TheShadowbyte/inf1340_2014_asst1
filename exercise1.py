@@ -64,3 +64,7 @@ def grade_to_gpa(grade):
 
     return gpa
 
+
+grade_to_gpa = {"A+": 4.0, "A": 4.0, "A-": 3.7, "B+": 3.3, "B": 3.0, "B-": 2.7, "FZ": 0.0}
+print(grade_to_gpa['A+'])
+
