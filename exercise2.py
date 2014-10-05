@@ -46,3 +46,6 @@ def checksum (upc):
 
     return False
 
+
+barcode1 = [0, 0, 1, 9, 0, 6, 7, 0, 4, 3, 6, 5]
+print((((sum(barcode1[1::2]) * 3) + (sum(barcode1[0::2]))) % 10) - 10)
