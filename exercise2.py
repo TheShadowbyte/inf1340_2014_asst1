@@ -7,9 +7,9 @@
 """
 
 __author__ = 'Dimitar Jordanov & Jordan Rae'
-__email__ = "jordanov@mail.utoronto.ca"
+__email__ = "jordanov@mail.utoronto.ca & jordan.rae@mail.utoronto.ca"
 
-__copyright__ = "2014 Susan Sim"
+__copyright__ = "2014 Dimitar Jordanov & Jordan Rae"
 __license__ = "MIT License"
 
 __status__ = "Prototype"
@@ -74,6 +74,4 @@ def checksum(upc):
     else:
         raise TypeError('The provided input must be a string, please try again.')
 
-# barcode1 = [0, 0, 1, 9, 0, 6, 7, 0, 4, 3, 6, 5]
-# print((((sum(barcode1[1::2]) * 3) + (sum(barcode1[0::2]))) % 10) - 10)
-checksum('123456789012')
+# checksum('123456789012')
