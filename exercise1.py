@@ -44,11 +44,11 @@ def grade_to_gpa(grade):
     gpa = 0.0
 
     if type(grade) is str:
-        print ("letter") # remove this line once the code is implemented
+        print("letter")  # remove this line once the code is implemented
         # check that the grade is one of the accepted values
         # assign grade to letter_grade
     elif type(grade) is int:
-        print("mark") # remove this line once the code is implemented
+        print("mark")  # remove this line once the code is implemented
         # check that grade is in the accepted range
         # convert the numeric grade to a letter grade
         # assign the value to letter_grade
@@ -66,5 +66,10 @@ def grade_to_gpa(grade):
 
 
 grade_to_gpa = {"A+": 4.0, "A": 4.0, "A-": 3.7, "B+": 3.3, "B": 3.0, "B-": 2.7, "FZ": 0.0}
-print(grade_to_gpa['A+'])
-
+print(grade_to_gpa["A+"] == 4.0)
+print(grade_to_gpa["A"] == 4.0)
+print(grade_to_gpa["A-"] == 4.0)
+print(grade_to_gpa["B+"] == 4.0)
+print(grade_to_gpa["B"] == 4.0)
+print(grade_to_gpa["B-"] == 4.0)
+print(grade_to_gpa["FZ"] == 4.0)
