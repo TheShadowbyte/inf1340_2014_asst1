@@ -2,9 +2,9 @@
 
 """ Assignment 1, Exercise 1, INF1340, Fall, 2014. Grade to gpa conversion
 
-This module contains one function grade_to_gpa. It can be passed a parameter
-that is an integer (0-100) or a letter grade (A+, A, A-, B+, B, B-, or FZ). All
-other inputs will result in an error.
+    This module contains one function grade_to_gpa. It can be passed a parameter
+    that is an integer (0-100) or a letter grade (A+, A, A-, B+, B, B-, or FZ). All
+    other inputs will result in an error.
 
 Example:
     $ python exercise1.py
@@ -12,9 +12,9 @@ Example:
 """
 
 __author__ = 'Dimitar Jordanov & Jordan Rae'
-__email__ = "jordanov@mail.utoronto.ca"
+__email__ = "jordanov@mail.utoronto.ca & jordan.rae@mail.utoronto.ca"
 
-__copyright__ = "2014 Dimitar Jordanov"
+__copyright__ = "2014 Dimitar Jordanov & Jordan Rae"
 __license__ = "MIT License"
 
 __status__ = "Prototype"
