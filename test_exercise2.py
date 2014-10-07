@@ -25,6 +25,10 @@ def test_checksum():
     assert checksum("085392132225") is True
     assert checksum("717951000841") is False
     # other tests
+    assert checksum("124578906532") is False
+    assert checksum("001480098006") is True
+    assert checksum("001570094004") is False
+
 
 
 def test_input():
