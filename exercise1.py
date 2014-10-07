@@ -40,36 +40,45 @@ def grade_to_gpa(grade):
         ValueError if parameter is out of range
     """
 
-    letter_grade = ""
-    gpa = 0.0
-
     if type(grade) is str:
-        print("letter")  # remove this line once the code is implemented
-        # check that the grade is one of the accepted values
-        # assign grade to letter_grade
+
+        if grade == "A+" or grade == "A":
+            gpa = 4.0
+            print(grade)
+        elif grade == "A-":
+            gpa = 3.7
+        elif grade == "B+":
+            gpa = 3.3
+        elif grade == "B":
+            gpa = 3.0
+        elif grade == "B-":
+            gpa = 2.7
+        elif grade == "FZ":
+            gpa = 0.0
+        else:
+            # Raise a ValueError if the input is not one of the possible letters.
+            raise ValueError("Wrong input given for letter grades.")
+
     elif type(grade) is int:
-        print("mark")  # remove this line once the code is implemented
-        # check that grade is in the accepted range
-        # convert the numeric grade to a letter grade
-        # assign the value to letter_grade
-        # hint: letter_grade = mark_to_letter(grade)
+
+        if 0 <= grade <= 69:
+            gpa = 0.0
+        elif grade <= 72:
+            gpa = 2.7
+        elif grade <= 76:
+            gpa = 3.0
+        elif grade <= 79:
+            gpa = 3.3
+        elif grade <= 84:
+            gpa = 3.7
+        elif 85 <= grade <= 100:
+            gpa = 4.0
+        else:
+            # Raise a ValueError if the input is less than 0 or greater than 100.
+            raise ValueError("Grade value outside range. Please use value between 0 and 100.")
+
     else:
         # raise a TypeError exception
         raise TypeError("Invalid type passed as parameter")
 
-    # write a long if-statement to convert letter_grade
-    # assign the value to gpa
-    if letter_grade == "A":
-        gpa = 4.0
-
     return gpa
-
-
-grade_to_gpa = {"A+": 4.0, "A": 4.0, "A-": 3.7, "B+": 3.3, "B": 3.0, "B-": 2.7, "FZ": 0.0}
-print(grade_to_gpa["A+"] == 4.0)
-print(grade_to_gpa["A"] == 4.0)
-print(grade_to_gpa["A-"] == 4.0)
-print(grade_to_gpa["B+"] == 4.0)
-print(grade_to_gpa["B"] == 4.0)
-print(grade_to_gpa["B-"] == 4.0)
-print(grade_to_gpa["FZ"] == 4.0)
