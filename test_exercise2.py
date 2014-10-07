@@ -29,8 +29,6 @@ def test_checksum():
     assert checksum("001480098006") is True
     assert checksum("001570094004") is False
 
-
-
 def test_input():
     """
     Inputs that are the incorrect format and length
@@ -46,5 +44,3 @@ def test_input():
         # other tests
 
     # add functions for any other tests
-
-
