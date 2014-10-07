@@ -30,12 +30,6 @@ def checksum(upc):
         ValueError if string is the wrong length (with error string stating how many digits are over or under
     """
 
-    # check type of input
-    # raise TypeError if not string
-
-    # check length of string
-    # raise ValueError if not 12
-
     # convert string to array
     # hint: use the list function
 
@@ -47,7 +41,9 @@ def checksum(upc):
     odd_positions = 0
     even_positions = 0
 
+    # check type of input
     if type(str(upc)) == type(upc):
+        # check length of string
         if len(upc) == 12:
             for x in range(0, len(upc) - 1):
                 if x == 0:
@@ -65,16 +61,19 @@ def checksum(upc):
             total_sum_modulo_ten = total_sum % 10
             final_check_sum = 10 - total_sum_modulo_ten
 
-            if final_check_sum == upc[-1]:
+            if final_check_sum == int(upc[-1]):
                 return True
             else:
                 return False
         else:
+            # raise ValueError if not 12
             raise ValueError('The provided input must be exactly 12 characters long.')
     else:
+        # raise TypeError if not string
         raise TypeError('The provided input must be a string, please try again.')
 
 # checksum('123456789012')
 
 # print(checksum('123456789012'))
 # print(checksum('019008460039'))
+# print(checksum("786936224306"))
