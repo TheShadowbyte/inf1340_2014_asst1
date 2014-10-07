@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 
+""" Module to test exercise3.py """
+
+__author__ = 'Dimitar Jordanov & Jordan Rae'
+__email__ = "jordanov@mail.utoronto.ca & jordan.rae@mail.utoronto.ca"
+
+__copyright__ = "2014 Dimitar Jordanov & Jordan Rae"
+__license__ = "MIT License"
+
+__status__ = "Prototype"
+
 import pytest
 from exercise3 import decide_rps
 
