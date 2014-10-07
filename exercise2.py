@@ -51,13 +51,13 @@ def checksum(upc):
         if len(upc) == 12:
             for x in range(0, len(upc) - 1):
                 if x == 0:
-                    print("First element")
+                    # print("First element")
                     odd_positions += int(upc[x])
                 elif x % 2 != 0:
-                    print("Even element")
+                    # print("Even element")
                     even_positions += int(upc[x])
                 else:
-                    print("Odd element")
+                    # print("Odd element")
                     odd_positions += int(upc[x])
 
             odd_positions_multiplied = odd_positions * 3
@@ -76,5 +76,5 @@ def checksum(upc):
 
 # checksum('123456789012')
 
-print(checksum('123456789012'))
-print(checksum('019008460039'))
+# print(checksum('123456789012'))
+# print(checksum('019008460039'))
